@@ -8,7 +8,11 @@ if ! [ -x "$(command -v git)" ]; then
         sudo apt install git-all
         echo "git has been installed!"
 fi
-
+if ! [ -x "$(command -v npm)" ]; then
+        echo "The npm command is required! We're going to install it for you... soo you might get asked for sudo."
+        sudo apt install nodejs npm
+        echo "npm has been installed!"
+fi
 
 mkdir /tmp/cloudsploit
 cd /tmp/cloudsploit
