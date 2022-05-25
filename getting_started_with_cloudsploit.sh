@@ -16,7 +16,7 @@ fi
 
 mkdir /tmp/cloudsploit
 cd /tmp/cloudsploit
-git clone git@github.com:cloudsploit/scans.git
+git clone https://github.com/aquasecurity/cloudsploit.git
 cd scans
 npm install --silent
 chmod +x index.js
